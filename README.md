@@ -1,7 +1,7 @@
 ## Learning Haskell
 
 I have started learning Haskell and this repository is for my practice and learning.
-The main motivation to study Haskell was to supplement my University module - Programming Language Principles and Design
+The main motivation to study Haskell was to supplement my University module - Programming Language Principles, Design and Implementation.
 
 Some of the resources I use: 
 
