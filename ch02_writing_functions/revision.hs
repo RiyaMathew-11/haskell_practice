@@ -33,3 +33,13 @@ myMap :: (a -> b) -> [a] -> [b]
 myMap _ [] = []
 myMap func (x:xs) = func x : myMap func xs
 
+-- We want to count the number of distinct bit sequences with n0 zeroes and n1 ones. Write a recursive function sequenceCount n0 n1 for that purpose.
+
+-- For example, sequenceCount 2 2 should return 6, as these sequences exist 0011, 0101, 0110, 1001, 1010, 1100.
+
+sequenceCount :: Integer -> Integer -> Integer
+sequenceCount num1 0 = 1
+sequenceCount 0 num2 = 1
+sequenceCount num1 num2 = sequenceCount (num1 - 1) num2 + sequenceCount num1 (num2 - 1)
+
+
